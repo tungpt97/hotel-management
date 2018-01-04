@@ -43,9 +43,9 @@ public class ItemDb {
 
     public void updateItem(Item item) {
         try {
-            String updateFood = "update food set name= '" + item.getItem_name() + "', price= " + item.getPrice() + "description = '" + item.getDescription() + "' where item_id = " + item.getItem_id();
-
-            // System.out.println(">>>>>>>>>> "+ insertRoomTypeQuery);
+            String updateFood = "update item set name= '" + item.getItem_name() + "', price= " + item.getPrice() + ", description = '" + item.getDescription() + "' where item_id = " + item.getItem_id();
+            
+            System.out.println(">>>>>>>>>> "+ updateFood);
             statement = conn.prepareStatement(updateFood);
 
             statement.execute();

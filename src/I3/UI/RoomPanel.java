@@ -465,7 +465,7 @@ public class RoomPanel extends javax.swing.JDialog {
        roomdb.insertRoom(room);
        populateRoomTable();
        clearRoomPanel();
-        
+       
         //System.out.println(combo_roomType.getSelectedItem().toString());
         
     }//GEN-LAST:event_btn_addActionPerformed

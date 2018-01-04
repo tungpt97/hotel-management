@@ -120,7 +120,8 @@ public class RoomDb {
                     + boolToString(room.isHasWIFI()) + "',gizer='"
                     + boolToString(room.isHasGizer()) + "', phone='"
                     + boolToString(room.isHasPhone()) + "', room_class='"
-                    + room.getRoom_class().getRoom_type() + "', meal_id="
+                    + room.getRoom_class().getRoom_type() + "'"
+                    
                     ;
                     
 

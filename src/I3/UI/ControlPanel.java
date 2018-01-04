@@ -610,6 +610,7 @@ public class ControlPanel extends javax.swing.JFrame {
                 roomString += "," + list.get(i);
             }
             tf_rooms.setText(roomString);
+            
         }
 
     }//GEN-LAST:event_btn_room_upActionPerformed

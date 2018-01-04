@@ -62,7 +62,6 @@ public class PaymentPanel extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_payment = new javax.swing.JTable();
-        jButton2 = new javax.swing.JButton();
         tf_total = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
@@ -91,10 +90,9 @@ public class PaymentPanel extends javax.swing.JDialog {
         });
         jScrollPane1.setViewportView(table_payment);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/meme.png"))); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        tf_total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                tf_totalActionPerformed(evt);
             }
         });
 
@@ -121,18 +119,16 @@ public class PaymentPanel extends javax.swing.JDialog {
                         .addGap(373, 373, 373)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(tf_total, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))))
+                        .addComponent(tf_total, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(348, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(combo_booking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_checkOut, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_checkOut, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_booking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56)
@@ -141,9 +137,7 @@ public class PaymentPanel extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tf_total, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         pack();
@@ -196,21 +190,11 @@ public class PaymentPanel extends javax.swing.JDialog {
         if (bookingId != -1) {
             result = bookingdB.getAllPaymentInfo(bookingId);
             populatePaymentTable(result);
+            this.updateTotalCheckBox();
         } else {
             JOptionPane.showMessageDialog(null, "no booking selected, try to select one hitting enter from suggestion box");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        try {
-            MessageFormat header = new MessageFormat("I3 Technologies");
-            MessageFormat footer = new MessageFormat("I3 hotel Management, Faysal Ahmed");
-
-            table_payment.print(JTable.PrintMode.NORMAL, header, footer);
-        } catch (PrinterException ex) {
-            JOptionPane.showMessageDialog(null, "Error printer \n" + ex.toString());
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void table_paymentPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_table_paymentPropertyChange
         if (table_payment.getModel().getRowCount() != 0) {
@@ -220,6 +204,11 @@ public class PaymentPanel extends javax.swing.JDialog {
         }
 
     }//GEN-LAST:event_table_paymentPropertyChange
+
+    private void tf_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_totalActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_tf_totalActionPerformed
 
     private void updateTotalCheckBox() {
         int total = 0;
@@ -345,7 +334,6 @@ public class PaymentPanel extends javax.swing.JDialog {
     private javax.swing.JButton btn_checkOut;
     private javax.swing.JComboBox combo_booking;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable table_payment;
