@@ -233,7 +233,7 @@ public class ControlPanel extends javax.swing.JFrame {
 
         jLabel3.setText("Address");
 
-        btn_saveBooking.setBackground(new java.awt.Color(0, 167, 157));
+        btn_saveBooking.setBackground(new java.awt.Color(0, 0, 0));
         btn_saveBooking.setForeground(new java.awt.Color(255, 255, 255));
         btn_saveBooking.setText("Save");
         btn_saveBooking.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 167, 157)));
@@ -345,7 +345,7 @@ public class ControlPanel extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.setBackground(new java.awt.Color(0, 167, 157));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
         combo_users.setEditable(true);
         combo_users.addActionListener(new java.awt.event.ActionListener() {
@@ -365,7 +365,7 @@ public class ControlPanel extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(combo_users, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE))
                 .addContainerGap(235, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -382,7 +382,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.setBorderPainted(false);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/CustomerInfo.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icon-crm.png"))); // NOI18N
         jButton1.setText("Customer Info");
         jButton1.setToolTipText("Customer Info");
         jButton1.setFocusable(false);
@@ -397,7 +397,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton1);
         jToolBar1.add(jSeparator3);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/rooms.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/BY-Door-Icon-100x100.png"))); // NOI18N
         jButton2.setText("Rooms");
         jButton2.setToolTipText("Room Info");
         jButton2.setFocusable(false);
@@ -412,7 +412,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton2);
         jToolBar1.add(jSeparator4);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/BookingDiary.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/timetable-filled.png"))); // NOI18N
         jButton4.setText("Booking Diary");
         jButton4.setToolTipText("Book a Room");
         jButton4.setFocusable(false);
@@ -427,7 +427,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton4);
         jToolBar1.add(jSeparator1);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/foods.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/food-and-wine-filled.png"))); // NOI18N
         jButton5.setText("Food");
         jButton5.setFocusable(false);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -441,7 +441,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton5);
         jToolBar1.add(jSeparator2);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/OtherItems.png"))); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/archive-folder-filled.png"))); // NOI18N
         jButton7.setText("Other Items");
         jButton7.setFocusable(false);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -454,7 +454,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton7);
         jToolBar1.add(jSeparator8);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/Checkout&Payment.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/card-in-use.png"))); // NOI18N
         jButton6.setText("Check Out and payment");
         jButton6.setFocusable(false);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -467,7 +467,7 @@ public class ControlPanel extends javax.swing.JFrame {
         jToolBar1.add(jButton6);
         jToolBar1.add(jSeparator6);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/LogBook_1.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/chrome-reader-mode.png"))); // NOI18N
         jButton3.setText("Log Book");
         jButton3.setToolTipText("Log Book");
         jButton3.setFocusable(false);

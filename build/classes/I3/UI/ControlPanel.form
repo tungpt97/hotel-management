@@ -390,7 +390,7 @@
                 <Component class="javax.swing.JButton" name="btn_saveBooking">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="9d" green="a7" red="0" type="rgb"/>
+                      <Color blue="0" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -442,7 +442,7 @@
             <Container class="javax.swing.JPanel" name="jPanel1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="9d" green="a7" red="0" type="rgb"/>
+                  <Color blue="33" green="33" red="33" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -507,7 +507,7 @@
                       <Font name="Tahoma" size="14" style="0"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/CustomerInfo.png"/>
+                      <Image iconType="3" name="/resources/icon-crm.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Customer Info"/>
                     <Property name="toolTipText" type="java.lang.String" value="Customer Info"/>
@@ -527,7 +527,7 @@
                 <Component class="javax.swing.JButton" name="jButton2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/rooms.png"/>
+                      <Image iconType="3" name="/resources/BY-Door-Icon-100x100.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Rooms"/>
                     <Property name="toolTipText" type="java.lang.String" value="Room Info"/>
@@ -547,7 +547,7 @@
                 <Component class="javax.swing.JButton" name="jButton4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/BookingDiary.png"/>
+                      <Image iconType="3" name="/resources/timetable-filled.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Booking Diary"/>
                     <Property name="toolTipText" type="java.lang.String" value="Book a Room"/>
@@ -567,7 +567,7 @@
                 <Component class="javax.swing.JButton" name="jButton5">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/foods.png"/>
+                      <Image iconType="3" name="/resources/food-and-wine-filled.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Food"/>
                     <Property name="focusable" type="boolean" value="false"/>
@@ -586,7 +586,7 @@
                 <Component class="javax.swing.JButton" name="jButton7">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/OtherItems.png"/>
+                      <Image iconType="3" name="/resources/archive-folder-filled.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Other Items"/>
                     <Property name="focusable" type="boolean" value="false"/>
@@ -602,7 +602,7 @@
                 <Component class="javax.swing.JButton" name="jButton6">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/Checkout&amp;Payment.png"/>
+                      <Image iconType="3" name="/resources/card-in-use.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Check Out and payment"/>
                     <Property name="focusable" type="boolean" value="false"/>
@@ -618,7 +618,7 @@
                 <Component class="javax.swing.JButton" name="jButton3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/resources/LogBook_1.png"/>
+                      <Image iconType="3" name="/resources/chrome-reader-mode.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Log Book"/>
                     <Property name="toolTipText" type="java.lang.String" value="Log Book"/>

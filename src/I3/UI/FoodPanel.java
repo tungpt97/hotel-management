@@ -229,19 +229,22 @@ public class FoodPanel extends javax.swing.JDialog {
     private void btn_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_addActionPerformed
         foodObjectCreation();
         db.insertFood(food);
-
+        populateFoodTable();
+        clearAllFields();
     }//GEN-LAST:event_btn_addActionPerformed
 
     private void btn_editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_editActionPerformed
         foodObjectCreation();
         db.updateFood(food);
-        
+        populateFoodTable();
+        clearAllFields();
     }//GEN-LAST:event_btn_editActionPerformed
 
     private void btn_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteActionPerformed
        int foodId = Integer.parseInt(tf_food_id.getText());
        db.deleteFood(foodId);
-       
+        populateFoodTable();
+        clearAllFields();
     }//GEN-LAST:event_btn_deleteActionPerformed
 
     private void table_foodMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_foodMouseClicked
