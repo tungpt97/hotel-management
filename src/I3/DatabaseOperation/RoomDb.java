@@ -113,14 +113,14 @@ public class RoomDb {
     public void updateRoom(Room room)
     {
          try {
-            String updateQuery ="update room set room_no = '"
-                    +room.getRoom_no()+"', bed_number="
-                    +room.getBed_number()+", tv = '"
-                    +boolToString(room.isHasTV())+"', wifi = '"
-                    +boolToString(room.isHasWIFI())+"',gizer = '"
-                    +boolToString(room.isHasGizer())+"', phone = '"
-                    +boolToString(room.isHasPhone())+"', room_class= '"
-                    +room.getRoom_class().getRoom_type()+"', meal_id = "
+            String updateQuery ="update room set room_no='"
+                    + room.getRoom_no() + "', bed_number="
+                    + room.getBed_number() + ", tv ='"
+                    + boolToString(room.isHasTV()) + "', wifi='"
+                    + boolToString(room.isHasWIFI()) + "',gizer='"
+                    + boolToString(room.isHasGizer()) + "', phone='"
+                    + boolToString(room.isHasPhone()) + "', room_class='"
+                    + room.getRoom_class().getRoom_type() + "', meal_id="
                     ;
                     
 
@@ -192,6 +192,26 @@ public class RoomDb {
 
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, ex.toString() + "\n" + "UpdateQuery Failed");
+        }
+        finally
+        {
+            flushStatmentOnly();
+        }
+    }
+    
+    public void deleteRoomType(String roomType) {
+        try {
+            String deleteRoomTypeQuery = "delete from roomType where type='" + roomType +  "'";
+
+            //System.out.println(">>>>>>>>>> "+ updateRoomTypeQuery);
+            statement = conn.prepareStatement(deleteRoomTypeQuery);
+
+            statement.execute();
+
+            JOptionPane.showMessageDialog(null, "successfully deleted a  Room Type");
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, ex.toString() + "\n" + "DeleteQuery Failed");
         }
         finally
         {

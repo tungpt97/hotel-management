@@ -524,9 +524,10 @@ public class RoomPanel extends javax.swing.JDialog {
 
     private void btn_deleteRoomTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteRoomTypeActionPerformed
         //int roomId =Integer.parseInt( tf_roomType.getText() );
-        
-        JOptionPane.showMessageDialog(null, "no method written yet");
-        
+        String roomType = tf_roomType.getText();
+        roomdb.deleteRoomType(roomType);
+        populateRoomTypeTable();
+        clearRoomTypePanel();
     }//GEN-LAST:event_btn_deleteRoomTypeActionPerformed
 
     private void check_wifiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_check_wifiActionPerformed

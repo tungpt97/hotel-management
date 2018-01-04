@@ -40,6 +40,8 @@ public class FoodPanel extends javax.swing.JDialog {
         initComponents();
         this.getContentPane().setBackground(new Color(241,241,242));
         populateFoodTable();
+        btn_edit.setEnabled(false);
+        btn_delete.setEnabled(false);
       //  test();
        
     }
